@@ -7,13 +7,25 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+            android:layout_width="210dp"
+            android:layout_height="44dp"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:id="@+id/editTextPin"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="84dp"
+            android:layout_marginStart="84dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="85dp"
+            android:layout_marginRight="85dp" android:layout_marginTop="232dp"
+            app:layout_constraintTop_toTopOf="parent" android:hint="Enter PIN here"/>
+    <Button
+            android:text="Disconnect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:id="@+id/buttonDisconnect"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="92dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="147dp"
+            android:layout_marginStart="147dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="149dp" android:layout_marginRight="149dp" android:layout_marginTop="70dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPin" app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintVertical_bias="0.08"/>
 </android.support.constraint.ConstraintLayout>
